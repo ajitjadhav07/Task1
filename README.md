@@ -12,7 +12,14 @@
   bash
   ./monitor.sh -all
   
-
-  
-
  Given the script execute permissions using "chmod +x my.sh" before running it.
+
+ aftersuccessfully running my.sh file, given the permission to "Crontab" to run existing file after every minute
+
+ bash
+ crontab -e
+ * * * * * my.sh
+## This will run .sh file every minute..
+
+crontab -l
+## this will check which existing file running actively.
